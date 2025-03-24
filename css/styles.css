@@ -39,14 +39,12 @@ a {
   background-color: #404bbf;
 }
 
-.hidden-heading {
-  display: none;
-}
+
 
 .container {
-  max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -142,6 +140,7 @@ a {
 .hero-section {
   background-color: #2e2f42;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -173,6 +172,8 @@ a {
   height: 56px;
   background-color: #4d5ae5;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
 }
 
 .button:hover {
@@ -195,6 +196,18 @@ a {
 li {
   list-style-type: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  margin-bottom: 8px;
+}
 /* our team section */
 
 .section_title {
@@ -204,6 +217,7 @@ li {
 .team-section {
   background-color: #F4F4FD;
   letter-spacing: 0.02em;
+  padding: 120px 0;
 }
 
 
@@ -269,7 +283,9 @@ li {
   flex-direction: column;
   align-items: center;
 }
- 
+ .indent_title_team {
+  margin-bottom: 8px;
+ }
 
 /* Our Portfolio-section */
 .portfolio-section {
@@ -282,6 +298,7 @@ li {
   /* Ограничиваем ширину */
   margin: 0 auto;
   padding: 0 15px;
+  padding: 32px 16px;
 }
 
 /* Заголовок секции */
@@ -305,6 +322,7 @@ li {
   gap: 24px;
   /* Отступы между карточками */
   justify-content: center;
+  row-gap: 48px;
 }
 
 /* Элементы списка (карточки) */
@@ -314,7 +332,11 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 48px;
   /* Выравниваем контент слева */
+}
+.portfolio-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
 }
 
 /* Контейнер внутри элемента */
