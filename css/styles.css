@@ -350,15 +350,13 @@ portfolio-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #e7e9fc;
   /* Обводка карточки */
-  border-top: none;
   /* Убираем верхнюю границу */
 }
 
 /* Контейнер внутри элемента */
 .portfolio-item-description {
-  padding: 32px 16px;
+ 
   /* Внутренние отступы */
   text-align: center;
 }
@@ -368,7 +366,8 @@ portfolio-item {
   display: block;
   max-width: 100%;
   height: auto;
-}
+  margin-bottom: 8px
+}  
 
 /* Заголовок внутри карточки */
 .indent_title_Portfolio {
@@ -386,8 +385,11 @@ portfolio-item {
 .portfolio-item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-
-
+.portfolio-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}  
 /* Footer */
 .footer {
   background-color: #2e2f42;
@@ -419,6 +421,6 @@ portfolio-item {
    
 }
 
-.container-footer {
+.footer {
   padding: 100px 0;
 }
