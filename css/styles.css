@@ -284,7 +284,9 @@ li {
   padding: 0 15px;
   margin: 0 auto;
 }
-
+.portfolio-section .container {
+  padding: 32px 16px;
+}
 /* Заголовок секции */
 .section-title {
   text-align: center;
