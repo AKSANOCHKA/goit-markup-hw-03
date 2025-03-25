@@ -259,7 +259,6 @@ li {
 }
 
 .indent_title_Portfolio {
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -336,7 +335,7 @@ li {
 
 /* Контейнер внутри элемента */
 .portfolio-info {
-  padding: 0 16px 32px;
+  padding: 16px 32px;
   /* Внутренний отступ */
   width: 100%;
   /* Растягиваем на всю ширину */
