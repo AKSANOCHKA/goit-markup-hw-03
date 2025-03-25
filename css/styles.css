@@ -183,18 +183,53 @@ a {
   padding-bottom: 188px;
   padding-top: 188px;
 }
-/* our advantages section*/
+.section {
+  padding: 40px 0;
+}
 
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Скрытый заголовок */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Список */
 .methods-inner {
   display: flex;
   gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Пункты списка */
 .methods-item {
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
-li {
-  list-style-type: none;
+
+/* Заголовки внутри списка */
+.title-align {
+  margin-bottom: 8px;
+}
+
+
+
+.methods-item:last-child {
+  margin-right: 0;
 }
 .visually-hidden {
   position: absolute;
